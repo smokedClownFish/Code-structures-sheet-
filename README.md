@@ -1,5 +1,5 @@
 # Code-structures-sheet-
-En este repositorio se alojarán documentos con estructuras 
+En este repositorio se alojarán documentos con las estructuras de código diferentes lenguajes
 <br>
 
 TÉRMINOS Y MODO DE EMPLEO
