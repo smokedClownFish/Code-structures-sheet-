@@ -1,2 +1,2 @@
 # Code-structures-sheet-
-HEre you can find the structures of differents languages
+Here you can find the structures of differents languages
