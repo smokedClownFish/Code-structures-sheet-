@@ -1,0 +1,231 @@
+h3 {
+    color:chartreuse; 
+  }
+/*Así se asigna un color a todos los elementos de tipo h3, lo mismo con el resto. */
+p {
+    color:crimson;
+  }
+
+a{
+    color:gold;
+  }
+
+.intermedio1 { /* Así se asigna un color a todo elemento que tenga la clase indicada, para referirse a la clase hay que colocar el punto delante del nombre de la clase. */
+    color:darkviolet;
+  }
+
+.intermedio2 {
+    color:deeppink;
+  }
+
+.indiceinicial {
+    color:darkgreen;
+  } 
+
+  /*Vamos a cambiar el tamaño de la fuente del párrafo, esto se puede combinar con el cambio de color.*/
+p {
+  font-size:30px;
+}
+/*p,
+ul,
+ol {
+  font-size:30px;
+}
+Así sería si quisiéramos cambiar la fuente de varios elementos a la vez*/
+
+/*Vamos a cambiar la tipografía*/
+h1 {
+  font-family: "Comic Sansa", "Verdana";
+}
+
+h2 {
+  font-family: "Bogaloo", cursive; /*Fuente sacada de fonts.google.com*/
+}
+
+h3 {
+  font-family: 'Send Flowers', cursive;
+}
+/*Vamos a cambiar el tamaño de las imágenes*/
+.imgsapo {
+  width: 200px;
+  /*Añadimos borde de color*/
+  border-width: 10px;
+  border-color: green;
+  border-style: solid;
+  /*Más estilos de borde:borde
+    dotted, dashed, double, groove, ridge, inset, outset*/
+}
+
+.imgpepo { /*Vamos a mezclar dos estilos, el primer equivale a partes sup e inf, el segundo a los laterales*/
+  width: 400px;
+  border-width: 15px;
+  border-color: red;
+  border-style: dashed double;
+  
+}
+
+.imgkanye {  /*Mezclamos 3 estilos*/
+  width: 300px;
+  border-width: 15px;
+  border-color: purple;
+  border-style: groove ridge dotted;
+  /*Vamos a redondear los bordes*/
+  border-radius:20pc;
+}
+
+.imgdito { /*Mezclamos 4 estilos*/
+  width: 100px;
+  border-width: 15px;
+  border-color: blue;
+  border-style: dashed double outset solid;
+  margin: 0px 20px 20px 50px; /*Metemos los espacios de los 4 lados de la imagen, empezando por arriba
+
+  -Si solo dejamos un valor sin concretar lado usará ese valor para los 4 lados del elemento, EJ: margin= 50px
+  
+  -Si introducimos 2 valores usará el primero para arriba y abajo y el segundo para la ziquierda y la derecha, EJ: margin= 20px 30px
+  
+  -Si solo quisiéramos meter un espacio a un lado, deberíamos concretar el lado, EJS: 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  */
+
+  /*DIFERENCIAS PADDING CON MARGIN
+  El padding no se ha utilizado en este documento, asún así trataré de ser lo más explícito posible: 
+  si creamos una imagen y le ponemos un borde, el padding sería de 0px, si queremos ponerle un doble marco, por decirlo de alguna manera, pondríamos un color para el borde y otro para el background, al añadir después el padding este nos haría la función de doble marco con el color del background ya que el padding nos separa la imagen de su marco
+  Si esto queremos luego separarlo del resto de elementos es cuando usamos el margin, que es la distancia entre el borde de la imagen y el resto de elementos.*/
+  
+}
+
+/*Vamos a cambiar el color del fondo del contenedor div*/
+div {
+  background-color:darkkhaki;
+}
+
+/*Vamos a usar el id en el pie de página*/
+#pie-de-pagina {
+  font-size: 20px;
+  color:burlywood;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Si queremos seleccionar un elemento con un atributo específico usaremos:  */
+/* Por ejemplo las imágenes con atributo "alt"*/
+img[alt] {
+  border-radius: 50%; /*Se cambiarán todas las imágenes menos la de Kanye debido a que esta no tiene el atributo alt*/
+}
+
+/*Si queremos seleccionar un elemento con un atributo con un valor específico usaremos:  */
+input[type="radio"]{
+  margin: 5px; /*Separamos los botones de tipo radio 5px entre ellos, "input" es opcional*/
+}
+
+/*Si queremos seleccionar un conjunto de enlaces que lleven al mismo destino:  */
+a[href="https://matias.ma/nsfw/?utm_source=hootsuite&utm_campaign=hootsuite"]{ 
+  color:green;
+  text-decoration: none; /*Eliminamos las decoraciones del texto*/
+  font-weight: bold; /*Ponemos el texto en negrita*/
+}
+.indicecolores{
+  text-decoration: none; /*SE APLICA ESTA MODIFICACIÓN PARA QUE NO INTERFIERA CON EL EJEMPLO DE LA LÍNEA 191, YA QUE ENTRARÍA EN CONFLICTO CON LA MODIFICACIÓN PARA LOS ENLACES.*/
+}
+
+/*UNIDADES DE MEDIDA MÁS USADAS:
+em -- tamaño del elemento en función del tamaño de letra contenido.
+
+ex -- Altura x de la fuente del elemento
+
+vw -- representa el 1% del ancho de la ventana del navegador, de esta manera si colocamos "20vw", el ancho será el 20% del ancho de la la ventana del navegador. Representa el "width"
+
+vh -- representa el 1% de la altura de la la ventana del navegador, de esta manera si colocamos "20vh", la altura será el 20% de la altura de la la ventana del navegador. Representa el "height"
+
+ 
+*/
+#contenedor-principal {
+  color:White; /*Color de letra*/
+  padding: 5px; /*Separamos los bordes del contenedor 5 px del borde de los elementos*/
+  font-size: 10px; /*Tamaño de letra*/
+  background-color: yellow; /*Ponemos fondo al div*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*Fuente de la letra*/
+}
+.rectangulo {
+  padding: 5px; /*A todas las clases que contengan "rectangulo" se les aplica un padding de 5 px entre el texto y el borde del rectángulo y un margin entre ellos de 5px*/
+  margin: 5px;
+}
+
+.px {
+  background-color: crimson; /*Color para el rectangulo con clase px*/
+  width: 200px; /*Tamaño y unidad de medida*/
+}
+
+.vw {
+  background-color: darkmagenta; /*Color para el rectangulo con clase vw*/
+  width: 20vw; /*Tamaño y unidad de medida*/
+}
+
+.em {
+  background-color: green; /*Color para el rectangulo con clase em*/
+  width: 15em; /*Tamaño y unidad de medida*/
+  /*Si aplicamos la línea posterior, multiplicará el tamaño de la letra que hayamos asignado al contenedor por el tamaño que acabaríamos de poner*/
+  /*font-size: 5em*/
+  /*Si cambiamos la unidad de medida, la letra también cambiará de tamaño*/
+}
+
+.vh {
+  background-color: darkblue;
+  width: 10vw;
+  height: 10vh; /*El alto es el 10% de la altura*/
+}
+
+/*ESTABLECER PRIORIDAD DE ESTILOS CSS*/
+.Color-azul{
+  color:blue;
+}
+
+.Color-rojo{
+  color:red;
+}
+/*En ambos casos se mostrará en rojo, eso es porque es la clase que está modificada con posterioridad, por así decirlo, es como si primero hubiéramos pintado todo elemento de esa clase de azul y después de rojo, si invertimos el órden se mostrarían azules, ya que sería la última modificación aplicada. Esto es un conflicto de un mismo nivel.*/
+
+.sin-subrayado{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: aqua wavy underline;
+}
+
+/*Como podrás observar, los enlaces del índice han sido subrayados de la manera que acabamos de declarar, pero el enlace que tiene la categoría "sin-subrayado" no tiene ningún subrayado como hemos declarado primero, esto es debido a que para los conflictos que no son del mismo nivel se resuelven dando prioridad a lo que sea más preciso, como lo son las clases en este caso.*/
+
+/*PRIORIDAD ID vs CLASS*/
+#priorizarid{
+  color:deeppink;
+}
+
+.priorizarclass{
+  color:greenyellow;
+}
+/*El id siempre tiene prioridad sobre la clase*/
+
+/*PRIORIDAD ID vs CLASS vs ESTILO EN LÍNEA*/
+.priorizarclass1{
+  color: red /*!important*/;
+}
+
+#prioridadtitulo{
+  color: yellow;
+}
+/*La prioridad la tiene el estilo en línea, si quisieramos poner una de las dos condiciones por encima del estilo en línea del archivo HTMl, deberíamos poner "!important" detrás del color sin los signos de comentario*/
+
+
+/*COLORES CON CÓDIGO HEXADECIMAL*/
+/*La estructura es la misma, solo que nos vale para poner un color personalizado; EJ:
+    a{
+      color: #a730ea;
+    }  esto nos pondría un color morado claro*/ 
+
+/*Si queremos usar variables en css, se usará la siguiente estructura
+" --[nombre-variable]: [datos-variable]; " 
+Esto nos sirve para modificar en una línea una misma variable usada en diversas ocasiones
+*/
